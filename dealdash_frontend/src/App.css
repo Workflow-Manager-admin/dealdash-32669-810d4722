@@ -34,37 +34,57 @@ body {
 }
 
 .navbar {
-  background-color: var(--base-dark);
-  padding: 16px;
+  background: var(--primary-bg-alt);
+  min-height: 72px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--divider);
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
-  z-index: 100;
+  z-index: 110;
+  left: 0;
 }
 
-.logo {
-  font-size: 1.25rem;
-  font-weight: 600;
+.dealdash-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary-accent);
+  gap: 13px;
+  letter-spacing: 0.03em;
 }
 
-.logo-symbol {
-  color: var(--base-light);
+.logo-dot {
+  background: var(--primary-accent);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: 0 0 6px 2px var(--primary-accent);
+}
+
+.logo-main {
+  color: var(--cta-color);
+  text-shadow: 0 0 3px #004f4a;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1050px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero {
