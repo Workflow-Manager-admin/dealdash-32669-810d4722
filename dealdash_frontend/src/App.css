@@ -87,35 +87,52 @@ body {
   align-items: center;
 }
 
-.hero {
-  padding-top: 120px;
-  padding-bottom: 64px;
-  text-align: center;
+.app-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  padding: 36px 0 26px 0;
+  margin-top: 72px;
+  border-bottom: 1px solid var(--divider);
 }
 
-.subtitle {
-  color: var(--base-light);
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
-.title {
-  font-size: 3.5rem;
+.current-city {
+  font-size: 1.3rem;
   font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
+  color: var(--primary-accent);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.description {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 16px;
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn {
+  background: none;
+  border: 2px solid var(--divider);
+  color: var(--cta-color);
+  font-size: 1.2rem;
+  border-radius: 22px;
+  padding: 8px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: background 0.15s, border 0.18s;
+  outline: none;
+}
+.toggle-btn.active, .toggle-btn:focus {
+  background: var(--primary-accent);
+  color: #1a2227;
+  border: 2px solid var(--primary-accent);
+}
+
+.toggle-btn:focus-visible {
+  outline: 2px solid var(--focus-outline);
+  outline-offset: 2px;
 }
 
 .btn {
