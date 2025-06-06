@@ -1,18 +1,30 @@
 :root {
-  --base-light: #00ffff;
-  --base-dark: #00008b;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --primary-bg: #14191f;
+  --primary-bg-alt: #1e2329;
+  --secondary-bg: #181c23;
+  --primary-accent: #00bfae;
+  --cta-color: #00ffd0;
+  --danger-color: #f95f5f;
+  --card-color: #222a36;
+  --text-color: #fff;
+  --text-secondary: #b0bac6;
+  --border-color: #222b35;
+  --divider: #27303a;
+  --focus-outline: #00bfae;
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--base-dark);
+  background-color: var(--primary-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+  transition: background 0.3s;
 }
 
 .app {
